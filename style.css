@@ -8,3 +8,88 @@ body{
 *{
 	box-sizing: border-box;
 }
+
+header{
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	max-height: 70px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 23px;
+}
+
+.top_left,
+.top_right{
+	display: flex;
+}
+
+.logo{
+	margin: 9.29px 50px 13.15px 40px;
+}
+
+.top_menu{
+	display: flex;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 23px;
+}
+
+.polis,
+.institut{
+	padding: 24px 20px 23px 20px; 
+}
+
+.selected{
+	border-bottom: 1px solid #2C4799;
+}
+
+.phones{
+	display: flex;
+	margin: 12px 30px 13px 30px;
+	min-width: 234px;
+}
+
+.phones_name{
+	color: #969696;
+	margin-right: 10px;
+}
+
+.phones_numbers{
+	color: #222222;
+	margin-right: 30px;
+}
+
+.right_menu{
+	margin-right: 40px;
+	display: flex;
+}
+
+.user_name{
+	color: #2C4799;
+	margin: 23px 5px 24px 0;
+}
+
+.photo{
+	margin: 22px 8px 24px 20px;
+}
+
+.menu_arrow{
+	margin: 23px 20px 28px 0;
+}
+
+.polis_selected,
+.institut_selected{
+	max-width: 1440px;
+}
+
+.my_polis{
+	min-height: 50px;
+	background: linear-gradient(0deg, rgba(12, 19, 45, 0.15), rgba(12, 19, 45, 0.15));
+}

@@ -3,10 +3,16 @@ body{
 	margin: 0;
 	font-family: 'PT Sans', sans-serif;
 	background: white;	
+	color: #222222;
 }
 
 *{
 	box-sizing: border-box;
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 23px;
 }
 
 header{
@@ -14,13 +20,6 @@ header{
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	max-height: 70px;
-
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 15px;
-	line-height: 23px;
 }
 
 .top_left,
@@ -47,13 +46,14 @@ header{
 }
 
 .selected{
-	border-bottom: 1px solid #2C4799;
+	border-bottom: 2px solid #2C4799;
+	padding-bottom: -2px;
 }
 
 .phones{
 	display: flex;
-	margin: 12px 30px 13px 30px;
-	min-width: 234px;
+	margin: 12px 0 13px 30px;
+	min-width: 174px;
 }
 
 .phones_name{
@@ -62,7 +62,6 @@ header{
 }
 
 .phones_numbers{
-	color: #222222;
 	margin-right: 30px;
 }
 
@@ -87,9 +86,88 @@ header{
 .polis_selected,
 .institut_selected{
 	max-width: 1440px;
+	margin: 0 auto;
 }
 
 .my_polis{
-	min-height: 50px;
-	background: linear-gradient(0deg, rgba(12, 19, 45, 0.15), rgba(12, 19, 45, 0.15));
+	background: url("images/polis_bg.jpg");
+	background-position: center;
+	background-size: cover;
+	padding: 0 120px 50px;
+}
+
+.ma_polis_title{
+	padding: 50px 0 20px 0;
+	color: white;
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 50px;
+}
+
+.my_polis_content{
+	display: flex;
+	justify-content: space-between;
+	margin-right: -20px;
+}
+
+.polis_list{
+	min-width: 380px;
+	min-height: 220px;
+	background: white;
+	border-radius: 20px;
+	position: relative;
+	margin-right: 20px;
+}
+
+.user_data{
+	margin: 21px 0 0 44px;
+}
+
+.user_fio{
+	color: #969696;
+}
+
+.polis_name{
+	font-family: Montserrat, sans-serif;
+	font-size: 20px;
+	line-height: 29px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.end_polis_text{
+	color: #969696;
+	margin-right: 
+}
+
+
+.category_icon,
+.category_icon_2{
+	position: absolute;
+	border-radius: 50%;
+	width: 44px;
+	height: 44px;
+	background: white;
+	left: -10px;
+	top: 35px;
+	padding: 12px;
+}
+
+.category_icon_2{
+	padding: 10px;
+}
+
+.new_polis{
+	max-width: 125px;
+	color: #FFFFFF;
+	opacity: 0.7;
+	margin: 20px;
+}
+
+.my_polis_list_3{
+	background: rgba(92, 92, 92, 0.72);
+	background-blend-mode: screen;
+	backdrop-filter: blur(25px);
 }

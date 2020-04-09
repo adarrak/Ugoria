@@ -139,7 +139,7 @@ header{
 
 .end_polis_text{
 	color: #969696;
-	margin-right: 
+	margin-right: 5px;
 }
 
 
@@ -170,4 +170,89 @@ header{
 	background: rgba(92, 92, 92, 0.72);
 	background-blend-mode: screen;
 	backdrop-filter: blur(25px);
+}
+
+.disabled{
+	display: none;
+}
+
+.but{
+	display: flex;
+	justify-content: flex-start;
+	margin: 51px 0 20px 45px;
+}
+
+.but_extend,
+.but_about{
+	width: 120px;
+	height: 42px;
+	border-radius: 6px;
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.but_extend{
+	color: #FFFFFF;
+	background-color: #2C4799;
+}
+
+.but_about{
+	color: #2C4799;;
+	border: 1px solid #2C4799;
+	background-color: #FFFFFF;
+}
+
+.polis_arrow{
+	margin: 87px 0 20px 20px;
+}
+
+.recommendations{
+	padding: 70px 130px;
+	font-family: Montserrat, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+}
+
+.recommendations_title{
+	font-size: 26px;
+	line-height: 29px;
+}
+
+.recommendations_list{
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -20px;
+	margin-bottom: -20px;
+}
+
+.recommendations_item{
+	width: 380px;
+	height: 241px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: red;
+	border-radius: 20px;
+}
+
+.rec_item_title{
+	margin: 20px 0 10px 20px;
+	font-size: 26px;
+	line-height: 29px;
+	min-height: 58px;
+}
+
+.rec_item_info{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 23px;
+	margin: 0 0 0 20px;
+	min-height: 69px;
+}
+
+.rec_arrow{
+	margin: 40px 0 20px 20px;
 }

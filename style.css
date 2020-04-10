@@ -228,16 +228,20 @@ header{
 }
 
 .recommendations_item{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	width: 380px;
 	height: 241px;
 	margin-right: 20px;
 	margin-bottom: 20px;
-	background: red;
 	border-radius: 20px;
+	background-position: center;
+	background-size: cover !important;
 }
 
 .rec_item_title{
-	margin: 20px 0 10px 20px;
+	margin: 20px 0 0 20px;
 	font-size: 26px;
 	line-height: 29px;
 	min-height: 58px;
@@ -249,10 +253,56 @@ header{
 	font-weight: normal;
 	font-size: 15px;
 	line-height: 23px;
-	margin: 0 0 0 20px;
+	margin: 10px 0 0 20px;
 	min-height: 69px;
 }
 
 .rec_arrow{
-	margin: 40px 0 20px 20px;
+	margin: 0 0 20px 20px;
+}
+
+footer{
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 130px 60px;
+}
+.footer_left div{
+	color: #2C4799;
+	margin-bottom: 5px;
+}
+
+.footer_left .footer_bot{
+	font-size: 13px;
+	line-height: 19px;
+	color: #969696;
+	opacity: 0.6;
+	margin-top: 15px;
+}
+
+.footer_right .phones{
+	margin-top: 0;
+}
+
+.phones .phones_name div,
+.phones .phones_numbers div{
+	margin-bottom: 5px;
+}
+
+.footer_right{
+	display: flex;
+}
+
+.mail{
+	margin-right: 98px;
+}
+
+.mail_title{
+	margin-bottom: 5px;
+	color: #969696;
+}
+
+.mail_content{
+	color: #2C4799;
 }

@@ -315,7 +315,7 @@ footer{
 }
 
 .hidden{
-	visibility: hidden;
+	display: none;
 }
 
 .no{
@@ -351,9 +351,6 @@ footer{
 		padding: 70px 70px 70px 74px;
 	}
 
-	.recommendations_list{
-
-	}
 
 	.recommendations_item{
 		width: 430px;
@@ -363,7 +360,13 @@ footer{
 	footer{
 		padding: 20px 70px 60px;
 	}
+	
 	.no{
 	display: inline;
+	}
+
+	.hidden{
+		display: block;
+		visibility: hidden;
 	}
 }

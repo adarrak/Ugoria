@@ -63,6 +63,7 @@ header{
 
 .phones_numbers{
 	margin-right: 30px;
+	min-width: 120px; 
 }
 
 .right_menu{
@@ -96,7 +97,7 @@ header{
 	padding: 0 120px 50px;
 }
 
-.ma_polis_title{
+.my_polis_title{
 	padding: 50px 0 20px 0;
 	color: white;
 	font-family: Montserrat, sans-serif;
@@ -108,6 +109,7 @@ header{
 
 .my_polis_content{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	margin-right: -20px;
 }
@@ -137,6 +139,10 @@ header{
 	margin-bottom: 10px;
 }
 
+.polis_end_date{
+	max-width: 260px;
+}
+
 .end_polis_text{
 	color: #969696;
 	margin-right: 5px;
@@ -159,17 +165,22 @@ header{
 	padding: 10px;
 }
 
+.my_polis_list_3{
+	background-color: rgba(92, 92, 92, 0.72);
+	background-blend-mode: screen;
+	backdrop-filter: blur(9px);
+}
+
+.polis_arrow,
+.new_polis{
+	filter: blur(0px);
+}
+
 .new_polis{
 	max-width: 125px;
 	color: #FFFFFF;
 	opacity: 0.7;
 	margin: 20px;
-}
-
-.my_polis_list_3{
-	background: rgba(92, 92, 92, 0.72);
-	background-blend-mode: screen;
-	backdrop-filter: blur(25px);
 }
 
 .disabled{
@@ -314,7 +325,8 @@ footer{
 	color: #2C4799;
 }
 
-.hidden{
+.hidden,
+.icon_disabled_768{
 	display: none;
 }
 
@@ -324,15 +336,13 @@ footer{
 
 
 
+
+
 /* для 1024<x<1440*/
 
-@media (max-width: 1439px){
+@media (max-width: 1439px) and (min-width: 1024px){
 	header{
 		max-width: 1024px;
-	}
-
-	.my_polis_content{
-		flex-wrap: wrap;
 	}
 
 	.polis_list{
@@ -342,8 +352,17 @@ footer{
 
 	}
 
+	.my_polis_title	{
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.recommendations_title{
+		max-width: 900px;
+		margin: 0 auto 20px;
+	}
+
 	.my_polis{
-		
 		padding: 0 62px 60px;
 	}
 
@@ -359,8 +378,107 @@ footer{
 
 	footer{
 		padding: 20px 70px 60px;
+		max-width: 1024px;
 	}
 	
+	.no{
+	display: inline;
+	}
+
+	.hidden{
+		display: block;
+		visibility: hidden;
+	}
+}
+
+/* для 768<x<1024*/
+
+@media (max-width: 1023px) and (min-width: 768px){
+	header{
+		max-width: 768px;
+	}
+
+	.polis_list{
+		margin-bottom: 20px;
+		min-width: 340px;
+	}
+
+	.my_polis_title	{
+		max-width: 680px;
+		margin: 0 auto;
+	}
+
+	.my_polis{
+		padding: 0 24px 60px;
+	}
+
+
+	.recommendations{
+		padding: 70px 34px 70px;
+	}
+
+	.recommendations_title{
+		max-width: 680px;
+		margin: 0 auto 20px;
+	}
+
+	.recommendations_item{
+		width: 340px;
+		height: 241px;
+	}
+
+	footer{
+		padding: 20px 34px 60px;
+		max-width: 768px;
+	}
+
+	.mail{
+		margin-right: 58px;
+	}
+ 	
+ 	.top_left{
+ 		position: relative;
+ 	}
+
+	.change{
+		width: 252px;
+		height: 114px;
+		display: flex;
+		flex-wrap: wrap;
+		position: absolute;
+		top: 60px;
+		right: -500px;
+		background: white;
+		border-radius: 3px;
+
+	}
+
+	.change .polis{
+		border: none;
+		margin: 29px 0 11px 20px;
+		padding: 0;
+		display: flex;
+		
+	}
+
+	.change .institut{
+		margin: 0 0 9px 20px;
+		padding: 0;
+		display: flex;
+	}
+
+	.icon_disabled_768{
+		display: block;
+		margin-right: 6px;
+	}
+
+	.burger{
+		margin: 0;
+		padding: 27px 22px;
+	}
+	
+
+
 	.no{
 	display: inline;
 	}

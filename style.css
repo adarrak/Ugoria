@@ -108,7 +108,7 @@ header{
 
 .my_polis_content{
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	margin-right: -20px;
 }
 
@@ -216,13 +216,16 @@ header{
 }
 
 .recommendations_title{
-	font-size: 26px;
-	line-height: 29px;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 50px;
+	margin-bottom: 20px;
 }
 
 .recommendations_list{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	margin-right: -20px;
 	margin-bottom: -20px;
 }
@@ -238,6 +241,10 @@ header{
 	border-radius: 20px;
 	background-position: center;
 	background-size: cover !important;
+}
+
+.recommendations_item:last-child{
+	border: 1px solid #EAEDF5;
 }
 
 .rec_item_title{
@@ -305,4 +312,58 @@ footer{
 
 .mail_content{
 	color: #2C4799;
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+.no{
+	display: none;
+}
+
+
+
+/* для 1024<x<1440*/
+
+@media (max-width: 1439px){
+	header{
+		max-width: 1024px;
+	}
+
+	.my_polis_content{
+		flex-wrap: wrap;
+	}
+
+	.polis_list{
+		margin-bottom: 20px;
+		width: 440px;
+		height: 220px;
+
+	}
+
+	.my_polis{
+		
+		padding: 0 62px 60px;
+	}
+
+	.recommendations{
+		padding: 70px 70px 70px 74px;
+	}
+
+	.recommendations_list{
+
+	}
+
+	.recommendations_item{
+		width: 430px;
+		height: 241px;
+	}
+
+	footer{
+		padding: 20px 70px 60px;
+	}
+	.no{
+	display: inline;
+	}
 }

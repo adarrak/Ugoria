@@ -31,6 +31,11 @@ header{
 	margin: 9.29px 50px 13.15px 40px;
 }
 
+.logo_img{
+	width:170px;
+	height: 48.56px;
+}
+
 .top_menu{
 	display: flex;
 	font-family: Roboto;
@@ -53,7 +58,7 @@ header{
 .phones{
 	display: flex;
 	margin: 12px 0 13px 30px;
-	min-width: 174px;
+	width: 210px;
 }
 
 .phones_name{
@@ -115,8 +120,8 @@ header{
 }
 
 .polis_list{
-	min-width: 380px;
-	min-height: 220px;
+	width: 380px;
+	height: 220px;
 	background: white;
 	border-radius: 20px;
 	position: relative;
@@ -326,12 +331,26 @@ footer{
 }
 
 .hidden,
-.icon_disabled_768{
+.icon_disabled_768,
+.burger{
 	display: none;
 }
 
 .no{
 	display: none;
+}
+
+.enabled_320{
+	display: none;
+}
+
+.yes_320{
+	display: none;
+}
+
+.grey_line{
+	border-top: 1px solid #969696;
+	height: 0.1px
 }
 
 
@@ -400,7 +419,7 @@ footer{
 
 	.polis_list{
 		margin-bottom: 20px;
-		min-width: 340px;
+		width: 340px;
 	}
 
 	.my_polis_title	{
@@ -447,7 +466,7 @@ footer{
 		flex-wrap: wrap;
 		position: absolute;
 		top: 60px;
-		right: -500px;
+		right: -470px;
 		background: white;
 		border-radius: 3px;
 
@@ -475,10 +494,9 @@ footer{
 	.burger{
 		margin: 0;
 		padding: 27px 22px;
+		display: block;
 	}
 	
-
-
 	.no{
 	display: inline;
 	}
@@ -488,3 +506,255 @@ footer{
 		visibility: hidden;
 	}
 }
+
+@media (max-width: 767px){
+	body{
+		min-width: 320px;
+	}
+
+	header{
+		max-width: 320px;
+		width: 320px;
+		align-items: center;	
+	}
+
+	.phones,
+	.user_name,
+	.menu_arrow,
+	.top_menu{
+		display: none;
+	}
+	
+	.logo{
+		margin: 7px 0 9px 20px;
+	}
+
+	.logo_img{
+		width: 122px;
+		height: 34.85px;
+	}
+
+	.right_menu{
+		margin: 13px 20px;
+		padding:  0;
+	}
+
+	.selected{
+		border-bottom: none;
+	}
+
+	.burger{
+		display: block;
+		margin: 1px 0 0 13px;
+		padding: 0;
+	}
+
+	.photo{
+		margin: 0;
+		padding: 0;
+	}
+
+	.top_line{
+		border-top: 1px solid #EAEDF5;	
+	}
+
+
+
+	.enabled_320{
+		display: flex;
+		min-width: 320px;
+		padding: 8px 20px;
+		justify-content: space-between;
+		max-width: 320px;
+		margin: 0 auto;
+	}
+
+	.icon_polis{
+		display: flex;
+		justify-content: flex-start;
+		padding: 7px 15px;
+		background-color: #EAEDF5;
+		border-radius: 37px;
+	}
+
+	.icon_polis_320{
+		margin-right: 6px;
+	}
+
+	.icon_recom{
+		display: flex;
+		justify-content: flex-start;
+		padding: 7px 0;
+		
+	}
+
+	.polis_selected{
+		min-width: 320px;
+	}
+
+	.my_polis{
+		padding: 50px 20px 20px;
+	}
+
+	.my_polis_title{
+		font-size: 28px;
+		line-height: 40px;
+		padding: 0 0 20px;
+		margin: 0 auto;
+		max-width: 320px;
+	}
+
+	.polis_list{
+		width: 280px;
+		height: 122px;
+		margin-bottom: 20px;
+
+	}
+
+	.my_polis_list_2{
+		height: 210px;
+	}
+
+	.my_polis_list_3{
+		height: 153px;
+	}
+
+	.my_polis_content{
+		flex-direction: column; 
+		align-items: center;
+	}
+
+	.polis_name{
+		color: #2C4799;
+	}
+
+	.but_about{
+		display: none;
+	}
+
+	.category_icon,
+	.category_icon_2{
+		top: 20px;
+		left: 250px;
+	}
+
+	.user_data{
+		margin-left: 20px;
+		margin-top: 15px;
+	}
+
+	.but{
+		margin: 20px 15px;
+		padding: 0;
+	}
+
+	.but_extend{
+		width: 250px;
+		height: 42px;
+		margin: 0;
+	}
+
+	.polis_arrow{
+		margin: 20px;
+	}
+
+	.recommendations{
+		padding: 70px 20px 20px;
+	}
+
+	.recommendations_title{
+		font-size: 28px;
+		line-height: 40px;
+		margin: 0 auto;
+		width: 320px;
+		margin-bottom: 20px;
+	}
+
+	.recommendations_list{
+		max-width: 320px;
+		margin: 0 auto;
+
+	}
+
+	.recommendations_item{
+		width: 280px;
+		height: 193px;
+		margin-right: 0;
+	}
+
+	.rec_item_title{
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.rec_item_info{
+		font-size: 13px;
+		line-height: 19px;
+	}
+
+	.recommendations_item_big{
+		height: 222px;
+	}
+
+	.recommendations_item_small{
+		height: 130px;
+	}
+
+	.no_320{
+		display: none;
+	}
+
+	footer{
+		width: 320px;
+		margin: 0 auto;
+		padding: 0 20px;
+
+	}
+
+	.yes_320{
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		width: 320px;
+		margin-top: 20px;
+
+
+	}
+
+	.phones_320{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
+
+	.left_320{
+		margin-right: 31px;
+	}
+
+	.phone_names_320{
+		color: #969696;
+	}
+	
+	.mail_title{
+		margin-bottom: 0;
+	}
+
+	.polit_info{
+		color: #2C4799;
+		margin: 20px 0;
+
+	}
+
+	.footer_bot{
+		color: #969696;
+		opacity: 0.6;
+		font-size: 13px;
+		line-height: 19px;
+		margin-bottom: 44px;
+	}
+
+	.no{
+		display: inline;
+	}
+
+}	

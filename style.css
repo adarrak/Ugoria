@@ -55,10 +55,14 @@ header{
 	padding-bottom: -2px;
 }
 
-.phones{
+.phon{
+	max-width: 300px;
+	padding: 12px 0;
+}
+
+.phones_1,
+.phones_2{
 	display: flex;
-	margin: 12px 0 13px 30px;
-	width: 210px;
 }
 
 .phones_name{
@@ -126,6 +130,7 @@ header{
 	border-radius: 20px;
 	position: relative;
 	margin-right: 20px;
+
 }
 
 .user_data{
@@ -188,9 +193,7 @@ header{
 	margin: 20px;
 }
 
-.disabled{
-	display: none;
-}
+
 
 .but{
 	display: flex;
@@ -282,6 +285,7 @@ header{
 
 .rec_arrow{
 	margin: 0 0 20px 20px;
+	max-width: 24px;
 }
 
 footer{
@@ -306,6 +310,7 @@ footer{
 
 .footer_right .phones{
 	margin-top: 0;
+	display: flex;
 }
 
 .phones .phones_name div,
@@ -352,7 +357,6 @@ footer{
 	border-top: 1px solid #969696;
 	height: 0.1px
 }
-
 
 
 
@@ -469,8 +473,9 @@ footer{
 		right: -470px;
 		background: white;
 		border-radius: 3px;
-
 	}
+
+
 
 	.change .polis{
 		border: none;
@@ -505,6 +510,11 @@ footer{
 		display: block;
 		visibility: hidden;
 	}
+
+	.change_768{
+		display: none;
+	}
+
 }
 
 @media (max-width: 767px){
@@ -518,7 +528,7 @@ footer{
 		align-items: center;	
 	}
 
-	.phones,
+	.phon,
 	.user_name,
 	.menu_arrow,
 	.top_menu{
@@ -758,3 +768,15 @@ footer{
 	}
 
 }	
+
+
+.disabled{
+	display: none;
+}
+
+.cli:hover,
+.but_about:hover,
+.but_extend:hover,
+.rec_arrow:hover{
+	cursor: pointer;
+}

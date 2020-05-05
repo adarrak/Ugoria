@@ -93,8 +93,7 @@ header{
 	margin: 23px 20px 28px 0;
 }
 
-.polis_selected,
-.institut_selected{
+.polis_selected{
 	max-width: 1440px;
 	margin: 0 auto;
 }
@@ -355,9 +354,51 @@ footer{
 
 .grey_line{
 	border-top: 1px solid #969696;
-	height: 0.1px
+	height: 0.1px;
 }
 
+
+.institut_selected_content{
+	border-bottom: 1px solid #969696;
+	border-top: 1px solid #969696;
+}
+
+.institut_head_radio{
+	padding: 18px 0 18px 118px;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.institut_radio input{
+	display: none;
+}
+
+.radio_choise{
+	padding: 7px 14px;
+	display: flex;
+}
+
+.list_logo,
+.map_logo{
+	margin-top: 2px;
+	margin-right: 6px;
+}
+
+.institut_radio>div{
+	display: inline-flex;
+ 	align-items: center;
+ 	user-select: none;
+}
+
+#list:checked~.radio_choise{
+	background: #EAEDF5;
+	border-radius: 37px;
+}
+
+#map:checked~.radio_choise{
+	background: #EAEDF5;
+	border-radius: 37px;
+}
 
 
 
@@ -411,6 +452,12 @@ footer{
 	.hidden{
 		display: block;
 		visibility: hidden;
+	}
+
+	.institut_head_radio{
+	padding: 18px 0 18px 72px;
+	max-width: 1024px;
+	margin: 0 auto;
 	}
 }
 
@@ -513,6 +560,12 @@ footer{
 
 	.change_768{
 		display: none;
+	}
+
+	.institut_head_radio{
+	padding: 18px 0 18px 34px;
+	max-width: 768px;
+	margin: 0 auto;
 	}
 
 }
@@ -767,8 +820,11 @@ footer{
 		display: inline;
 	}
 
-}	
+	.institut_selected_content{
+	display: none;
+	}	
 
+}
 
 .disabled{
 	display: none;

@@ -17,5 +17,5 @@ institut.onclick=function(){
 	polis.classList.remove('selected');
 	polis_selected.classList.add('disabled');
 	institut_selected.classList.remove('disabled');
-
 };
+

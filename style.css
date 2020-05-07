@@ -400,6 +400,102 @@ footer{
 	border-radius: 37px;
 }
 
+.institut_list_content{
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.list_left{
+	width: 1061px;
+	padding: 50px 51px 70px 130px;
+	border-right: 1px solid #969696;
+}
+
+.list_right{
+	flex-grow: 1;
+}
+
+.clinick_title{
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 29px;
+	margin-bottom: 15px;
+}
+
+.clinick_adress{
+	color: #2C4799;
+	margin-bottom: 15px;
+}
+
+.clinick_info{
+	display: flex;
+	margin-bottom: 15px;
+}
+
+.info_title{
+	color: #969696;
+	margin-bottom: 5px;
+}
+
+.clinick_info_time,
+.clinick_info_phone{
+	margin-right: 66px;
+}
+
+.clinick_info_phone .info_content{
+	color: #2C4799;
+}
+
+.list_left_item{
+	border-bottom: 1px solid #969696;
+	padding-bottom: 50px;
+}
+
+.list_left_item:last-child{
+	padding-bottom: 70px;
+	border-bottom: none;
+}
+
+.pagination{
+	width: 280px;
+	height: 48px;
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+.pagination_elem>div{
+	display: flex;
+ 	align-items: center;
+ 	user-select: none;
+ 	height: 48px;
+ 	width: 48px;
+ 	border-radius: 50%;
+ 	justify-content: center;
+}
+
+.pagination_elem input{
+	display: none;
+}
+
+.pagination_elem:hover:not(:checked){
+	background: #969696;
+	border-radius: 50%;
+
+}
+
+#N1:checked~div,
+#N2:checked~div,
+#N3:checked~div,
+#N:checked~div,
+#N6:checked~div{
+	background: #2C4799;
+}
+
+
 
 
 /* для 1024<x<1440*/
@@ -833,6 +929,7 @@ footer{
 .cli:hover,
 .but_about:hover,
 .but_extend:hover,
-.rec_arrow:hover{
+.rec_arrow:hover,
+.pagination_elem:hover{
 	cursor: pointer;
 }

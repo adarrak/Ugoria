@@ -220,7 +220,6 @@
 						<div class="list_logo">
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M1.66669 5.00016C1.66669 5.92064 2.41288 6.66683 3.33335 6.66683C4.25383 6.66683 5.00002 5.92064 5.00002 5.00016C5.00002 4.07969 4.25383 3.3335 3.33335 3.3335C2.41288 3.3335 1.66669 4.07969 1.66669 5.00016ZM18.3334 4.16683V5.8335H6.66669V4.16683H18.3334ZM18.3334 10.8335V9.16683H6.66669V10.8335H18.3334ZM6.66669 15.8335H18.3334V14.1668H6.66669V15.8335ZM1.66669 15.0002C1.66669 15.9206 2.41288 16.6668 3.33335 16.6668C4.25383 16.6668 5.00002 15.9206 5.00002 15.0002C5.00002 14.0797 4.25383 13.3335 3.33335 13.3335C2.41288 13.3335 1.66669 14.0797 1.66669 15.0002ZM3.33335 11.6668C2.41288 11.6668 1.66669 10.9206 1.66669 10.0002C1.66669 9.07969 2.41288 8.3335 3.33335 8.3335C4.25383 8.3335 5.00002 9.07969 5.00002 10.0002C5.00002 10.9206 4.25383 11.6668 3.33335 11.6668Z" fill="#2C4799"/>
-							
 						</div>
 						Список
 					</div>
@@ -243,7 +242,8 @@
 		</div>
 		<div class="institut_list_content">
 			<div class="list_left">
-				<div>	
+				<div class="list_left_alpha">
+					<div>	
 					<div class="list_left_item">
 					<div class="clinick_title">Клиника МЕДСИ в Красногорске</div>
 					<div class="clinick_adress">Московская область, г. Красногорск, ул. Успенская, д. 5</div>
@@ -282,8 +282,8 @@
 					</div>
 					<div class="clinick_about">Помощь на дому   ·   Стоматологическое обслуживание   ·   Скорая медицинская помощь   ·   Плановая и экстренная госпитализация</div>
 					</div>
-				</div>
-				<div class="pagination">
+					</div>
+					<div class="pagination">
 					<label for="N1" class="pagination_elem" >
 						<input type="radio" name="pag" id="N1" checked="checked">
 						<div>1</div>
@@ -304,9 +304,91 @@
 						<input type="radio" name="pag" id="N6">
 						<div>6</div>
 					</label>
+					</div>
+				</div>	
+				<div class="list_left_betta disabled">
+					<div class="map1"></div>
 				</div>
 			</div>
-			<div class="list_right">2</div>
+			<div class="list_right">
+				<div class="filter">
+					<input type="text" name="filter" placeholder="Метро или адрес клиники">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.6">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M10 18C5.58172 18 2 14.4183 2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10C18 11.8487 17.3729 13.551 16.3199 14.9056L21.7071 20.2929L20.2929 21.7071L14.9056 16.3199C13.551 17.3729 11.8487 18 10 18ZM16 10C16 13.3137 13.3137 16 10 16C6.68629 16 4 13.3137 4 10C4 6.68629 6.68629 4 10 4C13.3137 4 16 6.68629 16 10Z" fill="#969696"/>
+						</g>
+					</svg>
+
+				</div>
+				<div class="img_map">
+					<button>Показать на карте</button>
+				</div>
+				<div class="program">
+					<div class="program_title">
+						<div class="program_logo">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g opacity="0.5">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 2H9C10.1046 2 11 2.89543 11 4V9C11 10.1046 10.1046 11 9 11H4C2.89543 11 2 10.1046 2 9V4C2 2.89543 2.89543 2 4 2ZM4 13H9C10.1046 13 11 13.8954 11 15V20C11 21.1046 10.1046 22 9 22H4C2.89543 22 2 21.1046 2 20V15C2 13.8954 2.89543 13 4 13ZM18 13H16V16H13V18H16V21H18V18H21V16H18V13ZM4 20V15H9V20H4ZM4 9V4H9V9H4ZM15 2H20C21.1046 2 22 2.89543 22 4V9C22 10.1046 21.1046 11 20 11H15C13.8954 11 13 10.1046 13 9V4C13 2.89543 13.8954 2 15 2ZM15 9V4H20V9H15Z" fill="#2C4799"/>
+								</g>
+							</svg>
+							<span>Программы</span>
+						</div>
+						<div class="reset">Cброс</div>
+					</div>
+					<div class="checkbox">
+						<label for="prog1">
+							<input type="checkbox" name="programm" id="prog1">
+							<span>Амбулаторно-поликлиническое обслуживание</span>
+						</label>
+						<label for="prog2">
+							<input type="checkbox" name="programm" id="prog2">
+							<span>Помощь на дому</span>
+						</label>
+						<label for="prog3">
+							<input type="checkbox" name="programm" id="prog3">
+							<span>Стоматологическое обслуживание для взрослых и детей старше 1 года</span>
+						</label>
+						<label for="prog4">
+							<input type="checkbox" name="programm" id="prog4">
+							<span>Скорая медицинская помощь</span>
+						</label>
+						<label for="prog5">
+							<input type="checkbox" name="programm" id="prog5">
+							<span>Плановая и экстренная госпитализация</span>
+						</label>
+						
+					</div>
+				</div>
+				<div class="work_time">
+					<div class="program_title">
+						<div class="program_logo">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g opacity="0.5">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM17 11H13V6H11V13H17V11Z" fill="#2C4799"/>
+								</g>
+							</svg>
+
+
+							<span>Условия</span>
+						</div>
+						<div class="reset">Cброс</div>
+					</div>
+					<div class="checkbox">
+						<label for="res1">
+							<input type="checkbox" name="res" id="res1">
+							<span>Круглосуточно</span>
+						</label>
+						<label for="res2">
+							<input type="checkbox" name="res" id="res2">
+							<span>Без выходных</span>
+						</label>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+			
 		</div>
 	</div>
 	<div class="grey_line"></div>

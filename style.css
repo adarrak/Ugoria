@@ -495,6 +495,105 @@ footer{
 	background: #2C4799;
 }
 
+.list_right{
+	display: flex;
+	flex-direction: column;
+	padding-top: 30px;
+}
+
+.filter{
+	margin: 0 auto;
+	position: relative;
+	padding-bottom:30px;
+	
+}
+
+.filter input{
+	width: 321px;
+}
+
+.filter svg{
+	position: absolute;
+	top: 32px;
+	right: 5px;
+}
+
+.img_map{
+	width: 379px;
+	height: 150px;
+	background: url("images/map.png");
+	background-position: center;
+	background-size: cover;
+	margin: 0 auto 40px;
+	display: inline-flex;
+}
+
+.img_map button{
+	margin: auto;
+}
+
+.program{
+	margin: 40 auto;
+}
+
+.checkbox{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 10px;
+	width: 321px;
+}
+
+.checkbox label{
+	margin: 15px auto 0 62px;
+	position: relative;
+}
+
+
+.checkbox label input{
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	left: -32px;
+}
+
+.program_title{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 30px;
+}
+
+.program_logo span{
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+	margin-left: 9px;
+}
+
+.program_logo{
+	display: flex;
+	align-items: flex-start;
+}
+
+.reset{
+	color: #2C4799;
+	font-size: 13px;
+	line-height: 19px;
+}
+
+.work_time{
+	margin: 40px 0;
+}
+
+.map1{
+	background-size: cover;
+	background: url("images/map_1.png");
+	height: 779px;
+	background-position: center;
+	margin: -50px -51px -70px -130px;
+}
+
+
 
 
 
@@ -555,6 +654,43 @@ footer{
 	max-width: 1024px;
 	margin: 0 auto;
 	}
+
+	.filter input{
+		width: 280px;
+	}
+
+	.img_map{
+		width: 320px;
+		height: 150px;
+	}
+
+	.program_title{
+		margin: 0 20px;
+	}
+
+	.checkbox{
+		width: 280px;
+	}
+
+	.checkbox label{
+		margin:15px auto 0 52px;
+	}
+
+	.institut_list_content{
+		max-width: 1024px;
+	}
+
+	.list_left{
+		padding-left: 72px;
+		width: 705px;
+	}
+
+	.map1{	
+		height: 752px;
+		margin: -50px -51px -70px -72px;
+	}
+}
+
 }
 
 /* для 768<x<1024*/
@@ -663,6 +799,51 @@ footer{
 	max-width: 768px;
 	margin: 0 auto;
 	}
+
+	.filter input{
+		width: 250px;
+	}
+
+	.img_map{
+		width: 290px;
+		height: 150px;
+	}
+
+	.program_title{
+		margin: 0 20px;
+	}
+
+	.checkbox{
+		width: 250px;
+	}
+
+	.checkbox label{
+		margin:15px auto 0 52px;
+	}
+
+	.institut_list_content{
+		max-width: 768px;
+	}
+
+	.list_left{
+		padding-left: 34px;
+		padding-right: 40px;
+		width: 478px;
+	}
+
+	.clinick_info{
+		flex-wrap: wrap;
+	}
+
+	.clinick_info_site{
+		margin-top: 15px;
+	}
+
+	.map1{	
+		height: 500px;
+		margin: -50px -40px -70px -34px;
+	}
+
 
 }
 
